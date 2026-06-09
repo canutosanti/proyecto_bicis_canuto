@@ -1,0 +1,381 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1100px, 100% - 2rem);
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 70vh;
+  background: linear-gradient(135deg, rgba(32, 95, 104, 0.85), rgba(0, 0, 0, 0.65)),
+    url('https://thf.bing.com/th/id/OIP.RCS_L4VW1j_0nZeFTrisFAHaDV?w=325&h=157&c=7&r=0&o=7&cb=thfc1falcon2&pid=1.7&rm=3') center/cover no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  background: #ff8c42;
+  color: #111;
+  padding: 0.95rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-secondary {
+  background: #1f4f5f;
+  color: #fff;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.button:hover,
+.button-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section p {
+  max-width: 760px;
+  margin: 0.5rem auto 2rem;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.about,
+.services,
+.prices,
+.gallery,
+.contact {
+  background: #fff;
+}
+
+.cards,
+.price-grid,
+.gallery-grid,
+.contact-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.cards {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card,
+.price-item {
+  background: #fafafa;
+  border: 1px solid #e4e4e4;
+  border-radius: 16px;
+  padding: 1.7rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.card h3,
+.price-item h4 {
+  margin-bottom: 0.8rem;
+  color: #1f4f5f;
+}
+
+.price-item p {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #ff7a24;
+}
+
+.price-item small {
+  color: #606060;
+}
+
+.price-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+
+.gallery-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.gallery-grid img {
+  border-radius: 18px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.contact-grid {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.contact-grid > div,
+.contact-grid form {
+  background: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 18px;
+  padding: 1.8rem;
+}
+
+/* Accessibility helper */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.contact-grid label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.45rem;
+}
+
+.contact-grid input,
+.contact-grid textarea {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  font: inherit;
+}
+
+.contact-grid form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-grid button {
+  background: #1f4f5f;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 1.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.contact-grid button:hover {
+  background: #163e47;
+}
+
+.form-message {
+  margin-top: 0.75rem;
+  min-height: 1.2rem;
+  color: #1f4f5f;
+}
+
+footer {
+  background: #111;
+  color: #ddd;
+  padding: 1.5rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer nav {
+  display: flex;
+  gap: 1rem;
+}
+
+footer a {
+  color: #ddd;
+}
+
+.contact-buttons {
+  margin-top: 1rem;
+}
+
+.contact-button {
+  display: inline-block;
+  background: #25d366;
+  color: #111;
+  border-radius: 999px;
+  padding: 0.9rem 1.4rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contact-button:hover {
+  background: #1eb94d;
+  transform: translateY(-1px);
+}
+
+/* Contact categories (inline with dropdown panels) */
+.contact-categories {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.category {
+  width: calc(33.333% - 0.5rem);
+}
+
+.category-toggle {
+  width: 100%;
+  background: #f7f9fa;
+  border: 1px solid #e1e8ea;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  text-align: left;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cat-arrow {
+  transition: transform 0.2s ease;
+}
+
+.category-panel {
+  display: none;
+  background: #fff;
+  border: 1px solid #e9eef0;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.8rem;
+}
+
+.category.open .category-panel {
+  display: block;
+}
+
+.category ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.category ul li {
+  padding: 0.35rem 0;
+  color: #333;
+}
+
+@media (max-width: 840px) {
+  .hero {
+    min-height: 55vh;
+  }
+
+  
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-categories {
+    flex-direction: column;
+  }
+
+  .category {
+    width: 100%;
+  }
+
+  .map-wrapper iframe {
+    height: 300px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero p,
+  section p {
+    font-size: 0.98rem;
+  }
+
+  .hero-content {
+    padding: 1.3rem;
+  }
+
+  .price-item,
+  .card,
+  .contact-grid > div,
+  .contact-grid form {
+    padding: 1.4rem;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bicicletería Canuto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Bicicletería Canuto</h1>
+      <p>Tu taller y tienda de confianza para bicicletas urbanas, MTB y de paseo.</p>
+      <div class="hero-actions">
+        <a class="button" href="#contacto">Contactanos</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" id="nosotros">
+      <div class="container">
+        <h2>Sobre nosotros</h2>
+        <p>
+          En Bicicletería Canuto brindamos servicio técnico profesional, venta de repuestos
+          y asesoramiento personalizado. Contamos con un local físico y ahora también
+          queremos que nos conozcas en línea.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery" id="nuestro-local">
+      <div class="container">
+        <h2>Nuestro local</h2>
+        <p>Fotos de nuestro local. Podés reemplazar estas imágenes por las tuyas para mostrar cómo es el lugar.</p>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?auto=format&fit=crop&w=600&q=80" alt="Bicicleta en taller" />
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Bicicleta urbana" />
+          <img src="https://images.unsplash.com/photo-1518546305924-1fa7f3e6b1f8?auto=format&fit=crop&w=600&q=80" alt="Taller de bicicletas" />
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="Repuesto de bicicleta" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="contact-grid">
+          <div>
+            <p><strong>Dirección:</strong> Córdoba, Río Tercero</p>
+            <p><strong>Teléfono:</strong> <a href="tel:+543571411200">3571 411200</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/bicicleteriacanuto" target="_blank" rel="noopener">@bicicleteriacanuto</a></p>
+            <p><strong>Email:</strong> <a href="mailto:contacto@bicicleteriacanuto.com">contacto@bicicleteriacanuto.com</a></p>
+            <p><strong>Horario:</strong> Lun-Vie 8:00 - 16:00, Sáb 8:00 - 13:00</p>
+            <p><strong>Envíos:</strong> Hacemos envíos a toda Córdoba.</p>
+            <div class="contact-buttons">
+              <a class="contact-button whatsapp" href="https://wa.me/543571326728" target="_blank" rel="noopener">WhatsApp Consultas</a>
+            </div>
+
+            <div class="contact-categories" aria-label="Categorías de productos y servicios">
+              <div class="category">
+                <button class="category-toggle" type="button">Bicis <span class="cat-arrow">▾</span></button>
+                <div class="category-panel">
+                  <ul>
+                    <li>Bici Venzo</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="category">
+                <button class="category-toggle" type="button">Accesorios <span class="cat-arrow">▾</span></button>
+                <div class="category-panel">
+                  <ul>
+                    <li>Casco</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="category">
+                <button class="category-toggle" type="button">Repuestos <span class="cat-arrow">▾</span></button>
+                <div class="category-panel">
+                  <ul>
+                    <li>Aprete de manubrio</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form id="contactForm" aria-label="Formulario de contacto">
+            <label for="mensaje" class="visually-hidden">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu consulta" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+            <p class="form-message" id="formMessage"></p>
+          </form>
+        </div>
+        <div class="map-wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3377.1242969732552!2d-64.11968302512318!3d-32.173922773921525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd6f3a141903fb%3A0x94dc66c789c4c0ca!2sBicicleter%C3%ADa%20Canuto!5e0!3m2!1ses!2sar!4v1781044959617!5m2!1ses!2sar" width="600" height="450" style="border:0; width:100%; height:420px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Bicicletería Canuto. Todos los derechos reservados.</p>
+      <nav>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
